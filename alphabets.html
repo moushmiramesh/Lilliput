@@ -17,22 +17,16 @@
   <link rel="stylesheet" type="text/css" href="css/test.css" media="screen">
 
   <!--[if IE]>    <html class="ie"> <![endif]-->
+  
   <script>
 
-     function play(s){
-       var audio = document.getElementById("audio");
-       audio.src = s;
-       alert(audio.src);
-       audio.play();
-                 }
-
-
-    function playthesound(s){
+    function play(s){
        var audio = document.getElementById("audio");
        audio.src = s;
        audio.play();
-                 }
-   </script>
+     }
+    
+  </script>
   
   
   
@@ -53,11 +47,11 @@
   </nav>
 
 
-    <input type="button" value="A"  onclick="playthesound('audio/alpha/A.ogg')">
-    <input type="button" value="B"  onclick="playthesound('audio/alpha/B.ogg')">
-    <input type="button" value="C"  onclick="playthesound('audio/alpha/C.ogg')">
-    <input type="button" value="D"  onclick="playthesound('audio/alpha/D.ogg')">
-    <input type="button" value="E"  onclick="playthesound('audio/alpha/E.ogg')">
+    <input type="button" value="A"  onclick="play('audio/alpha/A.ogg')">
+    <input type="button" value="B"  onclick="play('audio/alpha/B.ogg')">
+    <input type="button" value="C"  onclick="play('audio/alpha/C.ogg')">
+    <input type="button" value="D"  onclick="play('audio/alpha/D.ogg')">
+    <input type="button" value="E"  onclick="play('audio/alpha/E.ogg')">
     
 
      <audio id="audio" src="" ></audio>
