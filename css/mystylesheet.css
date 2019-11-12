@@ -161,12 +161,14 @@ a img {
 	border-radius:15px;
 	background: #c7dcda; /* Fall back for browsers that donot support transparency */
 	background: rgba(199, 220, 218, 0.8);
+	overflow : hidden;
 }
 @media(min-width:992px){
 .main_content{
 	float:right;
 	width:80%;
 	clear:none;
+	overflow : hidden;
 }
 }
 
