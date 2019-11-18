@@ -81,6 +81,7 @@ function audio_play()
 }
 
 window.onbeforeunload = function(){
+      alert("hai");
       clearTimeout(timer);
       playing = false;  
 };
