@@ -79,3 +79,10 @@ function audio_play()
       	$("#speaker").fadeOut().fadeIn();
      }
 }
+
+window.onbeforeunload = function(){
+   if(playing){
+      clearTimeout(timer);
+      playing = false;  
+   }
+};
