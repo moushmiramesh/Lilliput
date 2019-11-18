@@ -19,7 +19,9 @@ $(document).ready(function(){
           audio_play(); //first time playing
 	  playing = true;
 	  animate();	  
+	  if(playing){  
 	  timer=setTimeout("play()",autoplay_time);
+          }
 	});   				           		
 });  
 
