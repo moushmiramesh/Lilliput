@@ -19,9 +19,7 @@ $(document).ready(function(){
           audio_play(); //first time playing
 	  playing = true;
 	  animate();	  
-	  if(playing){  
 	  timer=setTimeout("play()",autoplay_time);
-          }
 	});   				           		
 });  
 
@@ -83,8 +81,6 @@ function audio_play()
 }
 
 window.onbeforeunload = function(){
-   if(playing){
       clearTimeout(timer);
       playing = false;  
-   }
 };
