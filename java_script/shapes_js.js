@@ -58,9 +58,10 @@ function show_next(){
 
 					
 function play()
-{  
-   show_next();
-   timer=setTimeout("play()",autoplay_time);
+{  if(playing){
+     show_next();
+     timer=setTimeout("play()",autoplay_time);
+   }
 }
 
 function animate()
